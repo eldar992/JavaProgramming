@@ -8,13 +8,13 @@ import java.util.Scanner;
  */
 public class BlockDemo {
     public static void main(String[] args) {
-        System.out.println("Unesite vaš broj godina: ");
-        int starostKorisnikaPrograma = new Scanner(System.in).nextInt();
-        boolean uslovZaPunoljetnost = starostKorisnikaPrograma>=18;
-        if (uslovZaPunoljetnost) {
-            System.out.println("Vi ste punoljetni");
-        }else{
-            System.out.println("Niste punoljetni");
+        System.out.println("Unesite broj godina:");
+        int brojGodina = new Scanner(System.in).nextInt();
+        boolean uslovZaPunoljetnost = brojGodina >=18;
+        if (uslovZaPunoljetnost){
+            System.out.println("Korisnik je punoljetan.");
+        }else {
+            System.out.println("Korisnik nije punoljetan.");
         }
     }
 }
