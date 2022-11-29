@@ -10,5 +10,6 @@ public class MultiDimensionalArray {
 
         fullNames[5][0] = "Anja";
         fullNames[5][1] = "Tešanović";
+
     }
 }
