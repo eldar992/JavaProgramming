@@ -7,15 +7,18 @@ import java.util.Scanner;
 public class ConditionalDemo1 {
 
     public static void main(String[] args) {
-        System.out.println("Unesi starost: ");
-        int starost = new Scanner(System.in).nextInt();
-        System.out.println("Unesi prosjek ocjena: ");
-        double prosjekOcjena = new Scanner(System.in).nextDouble();
-        if(starost>=18 && prosjekOcjena>=3.5){
-            System.out.println("Ispunili uslov za upis na fakultet");
-        }
-        if(starost>=18 || prosjekOcjena >=2){
-            System.out.println("Možete se vjenčati");
+        System.out.println("Unesi prosjek ocjena korisnika:");
+        double ocjena = new Scanner(System.in).nextDouble();
+        System.out.println("Unesi godine korisnika:");
+        double godine = new Scanner(System.in).nextDouble();
+        if (ocjena >= 3.5 && godine>=18){
+            System.out.println("Korisnik može upisati 2. godinu.");
+        }else {
+            System.out.println("Korisnik ne može upisati 2. godinu.");
+        }if (ocjena<2 || godine<18){
+            System.out.println("Korisnik ima više ispita.");
+        }else {
+            System.out.println("Korisnik je na regularnim predavanjima.");
         }
     }
 }
