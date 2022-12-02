@@ -1,4 +1,4 @@
-package oop;
+package sevenOop;
 
 public class DogDemo {
     public static void main(String[] args) {

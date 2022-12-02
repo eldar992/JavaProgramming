@@ -1,4 +1,4 @@
-package oop;
+package sevenOop;
 
 public class PersonDemo {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package oop;
+package sevenOop;
 
 /**
  * Klasa može imati:

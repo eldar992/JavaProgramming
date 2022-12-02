@@ -8,7 +8,7 @@ import java.util.Scanner;
  * Program dopušta korisniku da unese redni broj dana u sedmici.
  * Nakon unosa ispisuje korisniku ime dana na Njemačkom.
  */
-public class SwitchDemo {
+public class  SwitchDemo {
     public static void main(String[] args) {
         System.out.println("Unesite redni broj dana u sedmici:");
         int redniBrojDana = new Scanner(System.in).nextInt();

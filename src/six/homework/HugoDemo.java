@@ -1,11 +1,14 @@
 package six.homework;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class HugoDemo {
     public static void main(String[] args) {
 
         System.out.println("Unesi peticu i započni igricu");
+        int velicinaNiza= 0;
+        int [] pogresniBrojevi = new int[velicinaNiza];
 
         while (true) {
             int number = new Scanner(System.in).nextInt();
@@ -13,7 +16,15 @@ public class HugoDemo {
                 System.out.println("Unio si peticu i počeo si igricu");
                 break;
             } else {
-                //TODO: ne gledati ovo rješenje i ExampleLoop nego ponuditi svoje rješenje
+                velicinaNiza++;
+                pogresniBrojevi = Arrays.copyOfRange(pogresniBrojevi,0,velicinaNiza);
+                pogresniBrojevi[velicinaNiza-1]=number;
+                String porukaKorisniku = "Unio si ";
+                for (int pogresanUnos : pogresniBrojevi) {
+                    porukaKorisniku = porukaKorisniku + pogresanUnos + ",";
+                }
+                porukaKorisniku= porukaKorisniku+" a petice niđe";
+                System.out.println(porukaKorisniku);
             }
         }
     }

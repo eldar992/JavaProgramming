@@ -1,4 +1,4 @@
-package oop;
+package sevenOop;
 
 /**
  * Dvije vrste tipova podataka:

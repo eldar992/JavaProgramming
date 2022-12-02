@@ -11,19 +11,17 @@ import java.util.Scanner;
 public class IfElseDemo {
     public static void main(String[] args) {
         System.out.println("Unesi broj bodova sa ispita:");
-        int brojBodova = new Scanner(System.in).nextInt();
+        double brojBodova = new Scanner(System.in).nextInt();
         char ocjena;
-        if (brojBodova>=90){
+        if (brojBodova >=90){
             ocjena = 'A';
         } else if (brojBodova>=80) {
             ocjena = 'B';
-        }else if (brojBodova>=70){
+        } else if (brojBodova>=70) {
             ocjena = 'C';
         } else if (brojBodova>=60) {
-            ocjena ='D';
-        }else {
-            ocjena = 'F';
-        }
-        System.out.println("Ocjena na osnovu bodova je: " + ocjena);
+            ocjena = 'D';
+        }else ocjena = 'F';
+        System.out.println("Ocjena na osnovu unesenih bodova je :" + ocjena);
     }
 }

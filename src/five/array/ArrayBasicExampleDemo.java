@@ -13,13 +13,14 @@ import java.util.stream.Stream;
  */
 public class ArrayBasicExampleDemo {
     public static void main(String[] args) {
-        int [] number = new int[3];
-        System.out.println("Unesi prvi broj");
+        int[] number = new int[3];
+        System.out.println("Unesi prvi broj:");
         number[0] = new Scanner(System.in).nextInt();
-        System.out.println("Unesi drugi broj");
+        System.out.println("Unesi drugi broj:");
         number[1] = new Scanner(System.in).nextInt();
-        System.out.println("Unesi treći broj");
+        System.out.println("Unesi treći broj:");
         number[2] = new Scanner(System.in).nextInt();
+
         for (int brojevi : number){
             System.out.println(brojevi);
         }
